@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+   <div id="app">
+       <div class="logo">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-5"></div>
+                   <div class="col-md-2">
+                       <img src="img/1.gif" alt="">
+                       <p>Notes App_Vue.js</p>
+                   </div>
+                   <div class="col-md-5"></div>
+               </div>
+           </div>
+       </div>
+
+   <div class="main">
+       <div class="main-top">
+        <div class="container">
+            <div class="row">
+                  
+           <div class="col-md-2">
+
+           </div>
+           <div class="col-md-8">
+               <p class="inp1"><input class="inpu" type="text" v-model="xin"></p>
+               <p class="inp2">{{xin.length}}字</p>
+           </div>
+           <div class="col-md-2">
+               <button type="button" class="btn btn-primary" @click="btn">添加笔记</button>
+           </div>
+            </div>
+        </div>
+       </div>
+        <div class="main-can" v-for="(arr,index) in arrs">
+        <div class="container">
+            <div class="row">
+                  
+           <div class="col-md-2">
+               <span>{{arr.time}}</span>
+           </div>
+           <div class="col-md-8">
+               <p class="inp3"><input type="text" v-model="arr.txt"></p>
+               <p class="inp4"><textarea name="txt" clos=",50" rows="15" warp="virtual" v-model="arr.txt">{{arr.txt}}</textarea></p>
+               <p class="inp2">{{arr.txt.length}}字</p>
+           </div>
+           <div class="col-md-2">
+               <button type="button" class="btn btn-primary" @click="btn2(index)">删除</button>
+           </div>
+            </div>
+        </div>
+       </div>
+   </div>
+      </div>
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
