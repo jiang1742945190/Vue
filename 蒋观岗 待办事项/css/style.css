@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#app{
+    text-align: center;
+}
+.txt{
+    margin-bottom: 30px;
+    margin-top: 60px;
+   
+}
+.txt a{
+     color: #000;
+}
+.ee input{
+    width: 260px;
+    height: 30px;
+    margin: 5px 0px;
+}
+.ee button{
+    height: 34px;
+    width: 50px;
+    margin-left: -4px;
+}
+.aa button{
+    height: 34px;
+    width: 50px;
+}
+.aa button{
+    float: right;
+}
+.aa span{
+    float: left;
+    padding-top: 5px;
+}
+.aa {
+    width: 317px;
+    margin: auto;
+    height: 35px;
+    border: 1px solid #999;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
